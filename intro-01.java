@@ -13,8 +13,14 @@ public class Main {
 
         //System.out.println(str);
 
-        for (int i = 0 ; i < str.length() ; i++) {
-            if (str.charAt(i) == t ) answer ++;
+         //기본적인 for 문
+//        for (int i = 0 ; i < str.length() ; i++) {
+//            if (str.charAt(i) == t ) answer ++;
+//        }
+
+        //응용 for 문
+        for( char x : str.toCharArray() ) {
+            if (x==t) answer++;
         }
 
         return answer;
